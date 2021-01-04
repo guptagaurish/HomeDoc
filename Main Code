@@ -1,0 +1,252 @@
+def bmi_calculator():
+ # getting input from the user and assigning it to user
+   height = float(input("Enter height in meters: "))
+   weight = float(input("Enter weight in kg: "))
+# the formula for calculating bmi
+   bmi = weight/(height**2)
+# ** is the power of operator i.e height*height in this case
+   print("Your BMI is: {0} and you are: ".format(bmi), end='')
+#condition
+   if ( bmi < 16):
+     print("severely underweight")
+   elif ( bmi >= 16 and bmi < 18.5):
+     print("underweight")
+   elif ( bmi >= 18.5 and bmi < 25):
+     print("Healthy")
+   elif ( bmi >= 25 and bmi < 30):
+     print("overweight")
+   elif ( bmi >=30):
+     print("severely overweight")
+
+
+def ailment():
+ print("Is there any vomiting:-")
+ a = input("Enter yes / no :-")
+ if a == 'yes':
+   print("Nothing Serious, you will be fine after a while")
+ else:
+   print("You are fine, we are Checking out another illness")
+ print("Do You have fever?")
+ b = input("Enter yes / no:-")
+ if b == 'yes':
+   c = float(input("Enter your Temperature in degree Fahrenheit:-"))
+   if 0 <= c < 94:
+     print("You have entered a very low temperature which is not possible for human body.")
+   elif 96 <= c < 99:
+     print("Your Body temperature is normal,You don't Have to worry.")
+   elif 99 <= c < 102:
+     print("You Have a normal fever, please take proper rest.")
+   elif 102 <= c < 105:
+     print("You have chances of Pneumonia, consult a physician.")
+   else:
+     print("You have a very high fever, please consult to a doctor ASAP.")
+ else:
+   print("You don't have any fever, we are checking for another symptoms.")
+   
+ print("Do you have any HeadAche?")
+ d = input("Enter yes / no :-")
+ if d == 'yes':
+   print("Please take a long sleep and if problem continues consult to a physician.")
+ else:
+   print("As you do not have any HeadAche we are checking other symptoms.")
+   
+ print("Acne on Whole Body:-")
+   e = input("Enter yes / no :-")
+ if e == 'yes':
+   print("You may have problem of measles, consult a doctor ASAP.")
+ else:
+   print("As you don't have Acne we are checking Other Symptoms.")
+ print("Do you have any cold?")
+ f = input("Enter yes / no :-")
+ if f == 'yes':
+   print("Take rest and if problem continues consult a doctor.")
+ else:
+   print("As you do not have any cold so you are alright")
+ if a and b and d and f == 'yes':
+   print("You have Serious Health issues, please Consult a Doctor As soon as possible")
+ if a and b and d and f != 'yes':
+   print("You do not have any health related problems, Enjoy your Day and Stay healthy.")
+ if b and d and f == 'yes':
+   print("You may have Seasonal Viral Fever, Consult to a doctor.")
+   
+   
+def squatB():
+ print("Squats ---->", end="\n")
+ n = 10
+ for i in range(1, 8):
+   print(f"Number of Squats at {i}th day =", n)
+   n += 5
+   i += 1
+def squatI():
+ print("Squats ---->", end="\n")
+ n = 15
+ for i in range(1, 8):
+   print("Number of squats at {i}th day =", n)
+   n += 5
+   i += 1
+def squatA():
+ print("Squats ---->", end="\n")
+ n = 20
+ for i in range(1, 8):
+   print(f"Number of squats at {i}th day =", n)
+   n += 5
+   i += 1
+   
+def pushupsB():
+ print("Push Ups ---->", end="\n")
+ n = 20
+ for i in range(1, 8):
+   print(f"Number of Push ups at {i}th day =", n)
+   n += 5
+   i += 1
+def pushupsI():
+ print("Push Ups ---->", end="\n")
+ n = 25
+ for i in range(1, 8):
+   print(f"Number of Push ups at {i}th day =", n)
+   n += 5
+   i += 1
+def pushupsA():
+ print("Push Ups ---->", end="\n")
+ n = 30
+ for i in range(1, 8):
+   print(f"Number of Push ups at {i}th day =", n)
+   n += 5
+   i += 1
+   
+def plankB():
+ print("Planking Time ---->", end="\n")
+ n = 1.00
+ for i in range(1, 8):
+   print(f"Time of Planking at {i}th day =", n)
+   n += 0.5
+   i += 1
+def plankI():
+ print("Planking Time ---->", end="\n")
+ n = 1.5
+ for i in range(1, 8):
+   print(f"Time of Planking at {i}th day =", n)
+   n += 0.5
+   i += 1
+def plankA():
+ print("Planking Time ---->", end="\n")
+ n = 2.0
+ for i in range(1, 8):
+   print(f"Time of Planking a {i}th Day =", n)
+   n += 0.5
+   i += 1
+   
+def skippingB():
+ print("Skipping Count ---->", end="\n")
+ n = 25
+ for i in range(1, 8):
+   print(f"Number of Skipping at {i}th Day =", n)
+   n += 5
+   i += 1
+def skippingI():
+ print("Skipping Count ---->", end="\n")
+ n = 30
+ for i in range(1, 8):
+   print(f"Number of Skipping at {i}th day =", n)
+   n += 5
+   i += 1
+def skippingA():
+ print("Skipping Count ---->", end="\n")
+ n = 35
+ for i in range(1, 8):
+   print(f"Number of Skipping at {i}th Day =", n)
+   i += 1
+   n += 5
+   
+   
+def beginner(sc):
+ if sc == 'yes':
+   squatB()
+   plankB()
+   skippingB()
+   print("Push Ups ---->\nNo Push ups for you.", end="\n")
+ else:
+    squatB()
+    plankB()
+    skippingB()
+    pushupsB()
+def intermediate(sc):
+ if sc == 'yes':
+    squatI()
+    pushupsI()
+    skippingI()
+ print("Planks ---->\nNo Planks for you.", end="\n")
+ else:
+    squatI()
+    plankI()
+    skippingI()
+    pushupsI()
+def advanced(sc):
+ if sc == 'yes':
+    squatA()
+    plankA()
+    pushupsA()
+    print("Skipping ---->\nNo Skippings for you.", end="\n")
+ else:
+    squatA()
+    plankA()
+    skippingA()
+    pushupsA()
+    
+    
+def workout():
+ print("Choose Your type.")
+ p = input("beginner / intermediate / advanced :-")
+ print("Number of Push ups You have done?")
+ sa = int(input("Push ups:-"))
+ print("How long you can hold a plank?")
+ sb = int(input("Time to hold a plank :-"))
+ print("Do you have any knee issue?")
+ sc = input("Enter yes / no :-")
+ print("How much weight you want to loose?")
+ sd = int(input("Weight to loose :-"))
+ if p == 'beginner' && sd<5:
+   print("first 30 days - ")
+   beginner(sc)
+   print("Next 30 days - ")
+   intermediate(sc)
+ elif p == 'beginner' && 5<sd<10:
+   print("first 30 days - ")
+   beginner(sc)
+   print("Next 30 days - ")
+   advanced(sc)
+ elif p == 'intermediate' && 5<sd<10:
+   intermediate(sc)
+ elif p == 'beginner' && 5<sd<10:
+   print("first 30 days - ")
+   intermediate(sc)
+   print("Next 30 days - ")
+   advanced(sc)
+ else:
+   advanced(sc)
+
+
+def search_engine():
+ print("what do you want to search")
+ x= input("search item is :- ")
+ #<script async
+  src="https://cse.google.com/cse.js?cx=008810097247979162634:oxeshsfjy3n"></script>
+ #<div class="gcse-search"></div>
+ print("the link will provide your desired search within app")
+ return 0
+
+
+app=int(input('which fuction do you want to perform'))
+if app == 1 :
+bmi_calculator()
+elif app == 2 :
+ workout()
+elif app == 3 :
+ ailment()
+elif app == 4 :
+ search_engine()
+else :
+ print("error occured")
+ #whole code is complete
+ #working on my app continuously
+ 
