@@ -230,7 +230,7 @@ def search_engine():
  print("what do you want to search")
  x= input("search item is :- ")
  #<script async
-  src="https://cse.google.com/cse.js?cx=008810097247979162634:oxeshsfjy3n"></script>
+  src="https://HomeDoc/x"></script>
  #<div class="gcse-search"></div>
  print("the link will provide your desired search within app")
  return 0
