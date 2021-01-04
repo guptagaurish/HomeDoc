@@ -226,14 +226,7 @@ def workout():
    advanced(sc)
 
 
-def search_engine():
- print("what do you want to search")
- x= input("search item is :- ")
- #<script async
-  src="https://HomeDoc/x"></script>
- #<div class="gcse-search"></div>
- print("the link will provide your desired search within app")
- return 0
+
 
 
 app=int(input('which fuction do you want to perform'))
@@ -243,8 +236,6 @@ elif app == 2 :
  workout()
 elif app == 3 :
  ailment()
-elif app == 4 :
- search_engine()
 else :
  print("error occured")
  #whole code is complete
